@@ -7,19 +7,19 @@ include('../includes/header.php');
         <input type="hidden" name="action" value="create">
         <div class="mb-2">
             <label for="" class="form-label">Name</label>
-            <input type="text" name="name" class="form-control">
+            <input type="text" name="name" class="form-control" required>
         </div>
         <div class="mb-2">
             <label for="" class="form-label">E-mail</label>
-            <input type="text" name="email" class="form-control">
+            <input type="text" name="email" class="form-control" required>
         </div>
         <div class="mb-2">
             <label for="" class="form-label">Phone</label>
-            <input type="number" name="phone" class="form-control" max="9999999999" placeholder="7780001122">
+            <input type="number" name="phone" class="form-control" max="9999999999" placeholder="7780001122" required>
         </div>
         <div class="mb-2">
             <label for="" class="form-label">Driver license</label>
-            <input type="text" name="driver_license" class="form-control">
+            <input type="text" name="driver_license" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-primary w-100">Submit</button>
     </form>

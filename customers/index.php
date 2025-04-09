@@ -31,7 +31,7 @@ include('../includes/header.php');
                 <td><?php echo $c['driver_license'] ?? 'null' ?></td>
                 <td>
                     <a href="/customers/edit.php?id=<?php echo $c['id'] ?>" class="btn btn-primary">Edit</a>
-                    <form action="/customers/delete.php" method="post">
+                    <form action="/customers/actions.php" method="post">
                         <input type="hidden" name="action" value="delete">
                         <input type="hidden" name="id" value="<?php echo $c['id'] ?>">
                         <button type="submit" class="btn btn-danger">Delete</button>
